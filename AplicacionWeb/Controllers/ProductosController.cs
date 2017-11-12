@@ -14,8 +14,14 @@ namespace AplicacionWeb.Controllers
         private IGestorDeProductos _gestorDeProductos = new GestorDeProductos();
         public ActionResult Index()
         {
-            List<ProductoRegistrado> listaDeProductos = _gestorDeProductos.ListarTodosLosProductos();
-            return View(listaDeProductos);
+            
+            return View();
         }
+
+        public ActionResult TablaDeProductos(string type)
+        {
+            List<ProductoRegistrado> listaDeProductos = _gestorDeProductos.ListarTodosLosProductos();
+            return PartialView(listaDeProductos);
+        }        
     }
 }

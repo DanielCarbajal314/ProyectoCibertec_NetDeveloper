@@ -1,42 +1,63 @@
-﻿@model IEnumerable<InterfacesInventario.Productos.Respuestas.ProductoRegistrado>
-
+﻿
 @{
     ViewBag.Title = "Mi Primera Pagina";
 }
 
 <h2>Nueva Pagina</h2>
 
+@Html.Partial("_FormularioDeProducto")
+
+<div id="ContenedorDeTabla">
+    @Html.Action("TablaDeProductos")
+</div>
 
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Precio)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @item.Id
-                </td>
-                <td>
-                    @item.Nombre
-                </td>
-                <td>
-                    @item.Precio
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+
+    $("#GuardarProducto").click(function () {
+        var nombre = $("#Nombre").val();
+        var precio = $("#Precio").val();
+        CrearNuevoProducto(nombre, precio);
+    });
+
+    function listarProductos() {
+        $.get("../api/productos", function (productos) {
+            productos.forEach(function (producto) {
+                console.log(producto.Nombre);
+            });
+        })
+    }
+
+    function NuevoProducto() {
+        this.Nombre = "";
+        this.Precio = 0;
+        this.IdsDeLasCategorias = [];
+        return this;
+    }
+    function CrearNuevoProducto(Nombre, Precio) {
+        var nuevoProducto = new NuevoProducto();
+        nuevoProducto.Nombre = Nombre;
+        nuevoProducto.Precio = Precio;
+        $.ajax({
+            url: "../api/productos",
+            type: "POST",
+            data: JSON.stringify(nuevoProducto),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (resulta) {
+                actualizarTabla();
+            }
+        });
+    }
+
+    function actualizarTabla() {
+        $.get("/productos/TablaDeProductos", function (htmlData) {
+            $("#ContenedorDeTabla").html(htmlData);
+        });
+    }
+
+     
+    
+
+</script>

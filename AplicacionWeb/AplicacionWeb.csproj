@@ -280,6 +280,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Productos\Index.cshtml" />
+    <Content Include="Views\Productos\TablaDeProductos.cshtml" />
+    <Content Include="Views\Productos\_FormularioDeProducto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
