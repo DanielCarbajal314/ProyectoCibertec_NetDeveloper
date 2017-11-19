@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using AplicacionWeb.ActionFilters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace AplicacionWeb
@@ -8,6 +9,7 @@ namespace AplicacionWeb
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new LoggerFilter());
         }
     }
 }
