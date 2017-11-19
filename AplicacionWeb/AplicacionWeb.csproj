@@ -210,6 +210,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
+    <Compile Include="Controllers\ProductosDataTableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -282,6 +283,7 @@
     <Content Include="Views\Productos\Index.cshtml" />
     <Content Include="Views\Productos\TablaDeProductos.cshtml" />
     <Content Include="Views\Productos\_FormularioDeProducto.cshtml" />
+    <Content Include="Views\ProductosDataTable\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

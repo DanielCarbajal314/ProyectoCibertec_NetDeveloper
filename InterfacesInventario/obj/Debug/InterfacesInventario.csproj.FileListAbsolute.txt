@@ -3,3 +3,8 @@ C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\InterfacesInventario\bin\Debug
 C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\InterfacesInventario\obj\Debug\InterfacesInventario.csprojResolveAssemblyReference.cache
 C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\InterfacesInventario\obj\Debug\InterfacesInventario.dll
 C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\InterfacesInventario\obj\Debug\InterfacesInventario.pdb
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\bin\Debug\InterfacesInventario.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\bin\Debug\InterfacesInventario.pdb
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\obj\Debug\InterfacesInventario.csprojResolveAssemblyReference.cache
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\obj\Debug\InterfacesInventario.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\obj\Debug\InterfacesInventario.pdb

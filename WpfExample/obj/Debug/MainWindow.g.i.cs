@@ -120,12 +120,6 @@ namespace WpfExample {
             {
             case 1:
             this.ProductosDataGrid = ((System.Windows.Controls.DataGrid)(target));
-            
-            #line 22 "..\..\MainWindow.xaml"
-            this.ProductosDataGrid.MouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.ProductosDataGrid_MouseDoubleClick);
-            
-            #line default
-            #line hidden
             return;
             case 2:
             this.textBox = ((System.Windows.Controls.TextBox)(target));

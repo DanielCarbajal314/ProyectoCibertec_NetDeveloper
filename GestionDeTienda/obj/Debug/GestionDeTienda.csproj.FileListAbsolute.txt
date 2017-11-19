@@ -12,3 +12,17 @@ C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\GestionDeTienda\bin\Debug\Enti
 C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\GestionDeTienda\obj\Debug\GestionDeTienda.csprojResolveAssemblyReference.cache
 C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\GestionDeTienda\obj\Debug\GestionDeTienda.dll
 C:\Users\Visual_Dom\Desktop\Clases\SistemaTiendas\GestionDeTienda\obj\Debug\GestionDeTienda.pdb
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\GestionDeTienda.dll.config
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\GestionDeTienda.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\GestionDeTienda.pdb
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\EntityFramework.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\InterfacesInventario.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\Inventario.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\InterfacesInventario.pdb
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\Inventario.pdb
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\EntityFramework.xml
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\obj\Debug\GestionDeTienda.csprojResolveAssemblyReference.cache
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\obj\Debug\GestionDeTienda.dll
+C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\GestionDeTienda\obj\Debug\GestionDeTienda.pdb
