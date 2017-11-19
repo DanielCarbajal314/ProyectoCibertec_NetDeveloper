@@ -23,9 +23,9 @@ namespace AplicacionWeb.Controllers.API
 
 
         // POST: api/Productos
-        public void Post(NuevoProducto nuevoProducto)
+        public ProductoRegistrado Post(NuevoProducto nuevoProducto)
         {
-            _gestorDeProductos.CrearProducto(nuevoProducto);
+            return _gestorDeProductos.CrearProducto(nuevoProducto);
         }
     }
 }

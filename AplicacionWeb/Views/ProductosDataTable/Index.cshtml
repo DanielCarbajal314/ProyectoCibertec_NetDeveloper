@@ -3,17 +3,109 @@
     ViewBag.Title = "Mantenimiento De Producto";
 }
 
-<h2>Tabla De Producto</h2>
+<div id="MantemientoDeProducto">
+    <fieldset class="col-lg-12">
+        <legend>Registro De Productos</legend>
+        <div class="form-group col-lg-6">
+            <div class="input-group">
+                <label for="Nombre">Nombre Del Producto</label>
+                <input id="Nombre" type="text" class="form-control input-sm">
+            </div>
+            <div class="input-group">
+                <label for="Precio">Precio Del Producto</label>
+                <input id="Precio" type="text" class="form-control input-sm">
+            </div>
+            <div class="input-group col-lg-12">
+                <br>
+                <div class="col-lg-10 col-lg-offset-1 row">
+                    <button id="GuardarProducto" class="btn btn-primary btn_spec btn-close"> Guardar </button>
+                    <button id="Cancelar" class="btn btn-primary btn_spec btn-close"> Cancelar </button>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <table id="TablaDeProductos">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+    </table>
+</div>
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 
-<table>
-    <thead>
-        <tr>
-            <td>Id</td>
-            <td>Nombre</td>
-            <td>Precio</td>
-        </tr>
-    </thead>
-</table>
+<script>
+    var tablaDeProductos;
+
+    $(document).ready(function () {
+        tablaDeProductos = $('table').DataTable();
+        CargarTablaDeProductos();
+    });
+    
+    function CargarTablaDeProductos() {
+        $.get("api/productos", function (productos) {
+            productos.forEach(function (producto) {
+                AgregarProductoATabla(producto);
+            });
+            tablaDeProductos.draw();
+        });
+    }
+
+    function AgregarProductoATabla(producto) {
+        tablaDeProductos.row.add(
+                    [
+                        producto.Id,
+                        producto.Nombre,
+                        producto.Precio
+                    ]
+        );
+    }
+
+
+    function NuevoProducto() {
+        this.Nombre = "";
+        this.Precio = 0;
+        this.IdsDeLasCategorias = [];
+        return this;
+    }
+
+    function CrearNuevoProducto(Nombre, Precio) {
+        var nuevoProducto = SacarProductoDelFormulario();
+        $.ajax({
+            url: "../api/productos",
+            type: "POST",
+            data: JSON.stringify(nuevoProducto),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (producto) {
+                AgregarProductoATabla(producto);
+                tablaDeProductos.draw();
+                LimpiarFormulario();
+            }
+        });
+    }
+
+    function SacarProductoDelFormulario() {
+        var Nombre = $('#Nombre').val();
+        var Precio = $('#Precio').val();
+        var nuevoProducto = new NuevoProducto();
+        nuevoProducto.Nombre = Nombre;
+        nuevoProducto.Precio = Precio;
+        return nuevoProducto;
+    }
+
+    function LimpiarFormulario(){
+        $('#Nombre').val('');
+        $('#Precio').val('');
+    }
+
+    $('#GuardarProducto').click(function () {
+        CrearNuevoProducto();
+    })
+
+
+</script>
