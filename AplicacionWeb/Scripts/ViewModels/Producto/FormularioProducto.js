@@ -12,6 +12,7 @@
     }
 
     self.TraerDatosDelServidor = function () {
+        self.Productos([]);
         $.get("api/productos", function (productos) {
             self.Productos(productos)
             self.Productos.valueHasMutated();
