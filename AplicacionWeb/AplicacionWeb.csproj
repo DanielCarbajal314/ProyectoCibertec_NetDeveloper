@@ -249,6 +249,7 @@
     <Content Include="Scripts\ScriptsGenerales\DataTables.js" />
     <Content Include="Scripts\ScriptsGenerales\JQuery.js" />
     <Content Include="Scripts\ScriptsGenerales\Knocout.js" />
+    <Content Include="Scripts\ScriptsGenerales\Notify.js" />
     <Content Include="Scripts\ScriptsGenerales\UtilitariosAJAX.js" />
     <Content Include="Scripts\ViewModels\Producto\FormularioProducto.js" />
     <Content Include="Scripts\ViewModels\Producto\ProductoBinding.js" />

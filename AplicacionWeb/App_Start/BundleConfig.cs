@@ -32,7 +32,8 @@ namespace AplicacionWeb
                     "~/Scripts/ScriptsGenerales/JQuery.js",
                     "~/Scripts/ScriptsGenerales/DataTables.js",
                     "~/Scripts/ScriptsGenerales/Knocout.js",
-                    "~/Scripts/ScriptsGenerales/UtilitariosAJAX.js"
+                    "~/Scripts/ScriptsGenerales/UtilitariosAJAX.js",
+                    "~/Scripts/ScriptsGenerales/Notify.js"
                     )
                 );
             bundles.Add(new ScriptBundle("~/bundles/FormularioDeProducto")

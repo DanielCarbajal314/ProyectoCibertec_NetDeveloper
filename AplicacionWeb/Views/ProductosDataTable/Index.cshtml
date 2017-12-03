@@ -33,6 +33,24 @@
             </tr>
         </thead>
     </table>
+
+
+    <table id="ProductosKnockout">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: Productos">
+            <tr>
+                <td data-bind="text: Id"></td>
+                <td data-bind="text: Nombre"></td>
+                <td data-bind="text: Precio"></td>
+            </tr>
+        </tbody>
+    </table>
     
 </div>
 
@@ -47,7 +65,7 @@
     var tablaDeProductos;
 
     $(document).ready(function () {
-        tablaDeProductos = $('table').DataTable();
+        tablaDeProductos = $('#TablaDeProductos').DataTable();
         CargarTablaDeProductos();
     });
     
