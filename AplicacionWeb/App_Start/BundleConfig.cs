@@ -30,12 +30,17 @@ namespace AplicacionWeb
             bundles.Add(new ScriptBundle("~/bundles/galeriasGlobales")
                     .Include(
                     "~/Scripts/ScriptsGenerales/JQuery.js",
-                    "~/Scripts/ScriptsGenerales/DataTables.js"
+                    "~/Scripts/ScriptsGenerales/DataTables.js",
+                    "~/Scripts/ScriptsGenerales/Knocout.js",
+                    "~/Scripts/ScriptsGenerales/UtilitariosAJAX.js"
                     )
                 );
-
-            BundleTable.EnableOptimizations = true;
-
+            bundles.Add(new ScriptBundle("~/bundles/FormularioDeProducto")
+                    .Include(
+                        "~/Scripts/ViewModels/Producto/FormularioProducto.js",
+                        "~/Scripts/ViewModels/Producto/ProductoBinding.js"
+                    )
+            );
         }
     }
 }

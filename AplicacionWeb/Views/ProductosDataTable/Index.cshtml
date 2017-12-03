@@ -9,16 +9,16 @@
         <div class="form-group col-lg-6">
             <div class="input-group">
                 <label for="Nombre">Nombre Del Producto</label>
-                <input id="Nombre" type="text" class="form-control input-sm">
+                <input id="Nombre" type="text" class="form-control input-sm" data-bind ="value: Nombre">
             </div>
             <div class="input-group">
                 <label for="Precio">Precio Del Producto</label>
-                <input id="Precio" type="text" class="form-control input-sm">
+                <input id="Precio" type="text" class="form-control input-sm" data-bind ="value: Precio">
             </div>
             <div class="input-group col-lg-12">
                 <br>
                 <div class="col-lg-10 col-lg-offset-1 row">
-                    <button id="GuardarProducto" class="btn btn-primary btn_spec btn-close"> Guardar </button>
+                    <button class="btn btn-primary btn_spec btn-close" data-bind="click: RegistrarProducto"> Guardar </button>
                     <button id="Cancelar" class="btn btn-primary btn_spec btn-close"> Cancelar </button>
                 </div>
             </div>
@@ -37,8 +37,11 @@
 </div>
 
 @Scripts.Render("~/bundles/galeriasGlobales")
+@Scripts.Render("~/bundles/FormularioDeProducto")
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+
 
 <script>
     var tablaDeProductos;
@@ -77,18 +80,15 @@
 
     function CrearNuevoProducto(Nombre, Precio) {
         var nuevoProducto = SacarProductoDelFormulario();
-        $.ajax({
-            url: "../api/productos",
-            type: "POST",
-            data: JSON.stringify(nuevoProducto),
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (producto) {
-                AgregarProductoATabla(producto);
-                tablaDeProductos.draw();
-                LimpiarFormulario();
-            }
-        });
+        Post(
+                "../api/productos", 
+                nuevoProducto,
+                function (producto) {
+                    AgregarProductoATabla(producto);
+                    tablaDeProductos.draw();
+                    LimpiarFormulario();
+                }
+        );
     }
 
     function SacarProductoDelFormulario() {
@@ -104,9 +104,4 @@
         $('#Nombre').val('');
         $('#Precio').val('');
     }
-
-    $('#GuardarProducto').click(function () {
-        CrearNuevoProducto();
-    })
-
 </script>
