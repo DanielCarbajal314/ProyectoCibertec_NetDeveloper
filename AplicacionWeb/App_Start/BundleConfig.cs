@@ -26,6 +26,16 @@ namespace AplicacionWeb
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/galeriasGlobales")
+                    .Include(
+                    "~/Scripts/ScriptsGenerales/JQuery.js",
+                    "~/Scripts/ScriptsGenerales/DataTables.js"
+                    )
+                );
+
+            BundleTable.EnableOptimizations = true;
+
         }
     }
 }

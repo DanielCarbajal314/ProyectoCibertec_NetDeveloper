@@ -18,3 +18,13 @@ C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\Inventario\bin\Debug\Enti
 C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\Inventario\obj\Debug\Inventario.csprojResolveAssemblyReference.cache
 C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\Inventario\obj\Debug\Inventario.dll
 C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\Inventario\obj\Debug\Inventario.pdb
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\Inventario.dll.config
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\Inventario.dll
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\Inventario.pdb
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\EntityFramework.dll
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\EntityFramework.xml
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\obj\Debug\Inventario.csprojResolveAssemblyReference.cache
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\obj\Debug\Inventario.dll
+C:\Users\Visual_Dom\Desktop\ProyectoDelCurso\Inventario\obj\Debug\Inventario.pdb
