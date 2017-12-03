@@ -69,39 +69,4 @@
                     ]
         );
     }
-
-
-    function NuevoProducto() {
-        this.Nombre = "";
-        this.Precio = 0;
-        this.IdsDeLasCategorias = [];
-        return this;
-    }
-
-    function CrearNuevoProducto(Nombre, Precio) {
-        var nuevoProducto = SacarProductoDelFormulario();
-        Post(
-                "../api/productos", 
-                nuevoProducto,
-                function (producto) {
-                    AgregarProductoATabla(producto);
-                    tablaDeProductos.draw();
-                    LimpiarFormulario();
-                }
-        );
-    }
-
-    function SacarProductoDelFormulario() {
-        var Nombre = $('#Nombre').val();
-        var Precio = $('#Precio').val();
-        var nuevoProducto = new NuevoProducto();
-        nuevoProducto.Nombre = Nombre;
-        nuevoProducto.Precio = Precio;
-        return nuevoProducto;
-    }
-
-    function LimpiarFormulario(){
-        $('#Nombre').val('');
-        $('#Precio').val('');
-    }
 </script>
