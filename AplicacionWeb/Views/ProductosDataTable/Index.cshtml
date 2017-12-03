@@ -33,58 +33,9 @@
             </tr>
         </thead>
     </table>
-
-
-    <table id="ProductosKnockout">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody data-bind="foreach: Productos">
-            <tr>
-                <td data-bind="text: Id"></td>
-                <td data-bind="text: Nombre"></td>
-                <td data-bind="text: Precio"></td>
-            </tr>
-        </tbody>
-    </table>
     
 </div>
 
 @Scripts.Render("~/bundles/galeriasGlobales")
 @Scripts.Render("~/bundles/FormularioDeProducto")
-
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-
-
-
-<script>
-    var tablaDeProductos;
-
-    $(document).ready(function () {
-        tablaDeProductos = $('#TablaDeProductos').DataTable();
-        CargarTablaDeProductos();
-    });
-    
-    function CargarTablaDeProductos() {
-        $.get("api/productos", function (productos) {
-            productos.forEach(function (producto) {
-                AgregarProductoATabla(producto);
-            });
-            tablaDeProductos.draw();
-        });
-    }
-
-    function AgregarProductoATabla(producto) {
-        tablaDeProductos.row.add(
-                    [
-                        producto.Id,
-                        producto.Nombre,
-                        producto.Precio
-                    ]
-        );
-    }
-</script>
