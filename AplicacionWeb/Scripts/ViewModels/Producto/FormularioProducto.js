@@ -5,7 +5,6 @@
     self.Productos = ko.observableArray([]);
     self.TablaDeProductos = $('#TablaDeProductos').DataTable();
 
-
     self.LimpiarFormulario = function () {
         self.Nombre("");
         self.Precio("");
@@ -14,8 +13,7 @@
     self.TraerDatosDelServidor = function () {
         self.Productos([]);
         $.get("api/productos", function (productos) {
-            self.Productos(productos)
-            self.Productos.valueHasMutated();
+            self.Productos(productos);
         });
     }
 
@@ -57,7 +55,6 @@
             IdsDeLasCategorias : []
         }
     }
-
 
     return self;
 }
