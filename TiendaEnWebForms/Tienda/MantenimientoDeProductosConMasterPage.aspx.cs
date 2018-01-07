@@ -1,7 +1,7 @@
 ﻿using GestionDeTienda;
 using InterfacesInventario.Productos;
-using InterfacesInventario.Productos.Respuestas;
 using InterfacesInventario.Productos.Peticiones;
+using InterfacesInventario.Productos.Respuestas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +11,16 @@ using System.Web.UI.WebControls;
 
 namespace TiendaEnWebForms.Tienda
 {
-    public partial class Productos : System.Web.UI.Page
+    public partial class MantenimientoDeProductosConMasterPage : System.Web.UI.Page
     {
-
         IGestorDeProductos _gestorDeProductos = new GestorDeProductos();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            MakeGridViewPrinterFriendly(this.ListaDeProductos);
         }
 
-        public List<ProductoRegistrado> ListarProductos() {
+        public List<ProductoRegistrado> ListarProductos()
+        {
             return this._gestorDeProductos.ListarTodosLosProductos();
         }
 
@@ -31,12 +31,28 @@ namespace TiendaEnWebForms.Tienda
             nuevoProducto.Nombre = this.Nombre.Text;
             this._gestorDeProductos.CrearProducto(nuevoProducto);
             ActualizarFormulario();
+            MakeGridViewPrinterFriendly(this.ListaDeProductos);
         }
 
-        private void ActualizarFormulario() {
+        private void ActualizarFormulario()
+        {
             this.Precio.Text = "";
             this.Nombre.Text = "";
             this.ListaDeProductos.DataBind();
+            ClientScript.RegisterStartupScript(
+                                this.GetType(), 
+                                "Notificacion", 
+                                "alert('" + "Se guardo con exito el producto" + "');",
+                                true);
+        }
+
+        private void MakeGridViewPrinterFriendly(GridView gridView)
+        {
+            if (gridView.Rows.Count > 0)
+            {
+                gridView.UseAccessibleHeader = true;
+                gridView.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
         }
     }
 }
