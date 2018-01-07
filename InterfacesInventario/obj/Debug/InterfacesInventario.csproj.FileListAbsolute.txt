@@ -8,3 +8,8 @@ C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\bin\
 C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\obj\Debug\InterfacesInventario.csprojResolveAssemblyReference.cache
 C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\obj\Debug\InterfacesInventario.dll
 C:\Users\Visual_Dom\Desktop\Proyectos\ProyectoDelCurso\InterfacesInventario\obj\Debug\InterfacesInventario.pdb
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\InterfacesInventario\bin\Debug\InterfacesInventario.dll
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\InterfacesInventario\bin\Debug\InterfacesInventario.pdb
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\InterfacesInventario\obj\Debug\InterfacesInventario.csprojResolveAssemblyReference.cache
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\InterfacesInventario\obj\Debug\InterfacesInventario.dll
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\InterfacesInventario\obj\Debug\InterfacesInventario.pdb
