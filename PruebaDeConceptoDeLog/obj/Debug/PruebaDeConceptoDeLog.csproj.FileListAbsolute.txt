@@ -1,0 +1,8 @@
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\bin\Debug\PruebaDeConceptoDeLog.exe.config
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\bin\Debug\PruebaDeConceptoDeLog.exe
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\bin\Debug\PruebaDeConceptoDeLog.pdb
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\bin\Debug\log4net.dll
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\bin\Debug\log4net.xml
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\obj\Debug\PruebaDeConceptoDeLog.csprojResolveAssemblyReference.cache
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\obj\Debug\PruebaDeConceptoDeLog.exe
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\PruebaDeConceptoDeLog\obj\Debug\PruebaDeConceptoDeLog.pdb

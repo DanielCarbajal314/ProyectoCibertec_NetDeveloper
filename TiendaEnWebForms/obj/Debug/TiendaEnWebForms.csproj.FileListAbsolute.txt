@@ -83,3 +83,5 @@ C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\TiendaEnWebForms\bin\Microso
 C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\TiendaEnWebForms\obj\Debug\TiendaEnWebForms.csprojResolveAssemblyReference.cache
 C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\TiendaEnWebForms\obj\Debug\TiendaEnWebForms.dll
 C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\TiendaEnWebForms\obj\Debug\TiendaEnWebForms.pdb
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\TiendaEnWebForms\bin\log4net.dll
+C:\Users\Visual_Dom\Desktop\GITHUB\ProyectoDeClases\TiendaEnWebForms\bin\log4net.xml

@@ -29,9 +29,17 @@ namespace TiendaEnWebForms.Tienda
             NuevoProducto nuevoProducto = new NuevoProducto();
             nuevoProducto.Precio = int.Parse(this.Precio.Text);
             nuevoProducto.Nombre = this.Nombre.Text;
-            this._gestorDeProductos.CrearProducto(nuevoProducto);
+            var productoRegistrado = this._gestorDeProductos.CrearProducto(nuevoProducto);
             ActualizarFormulario();
             MakeGridViewPrinterFriendly(this.ListaDeProductos);
+
+            EnviarMensajeAlMasterPage("Se registro con exito el producto "+nuevoProducto.Nombre+" con Id : "+ productoRegistrado.Id);
+
+        }
+
+        private void EnviarMensajeAlMasterPage(string mensaje) {
+            var master = Master as SiteMaster;
+            master.CambiarMensaje(mensaje);
         }
 
         private void ActualizarFormulario()

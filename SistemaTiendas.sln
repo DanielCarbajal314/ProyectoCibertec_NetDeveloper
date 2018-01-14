@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacionWeb", "Aplicacion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaEnWebForms", "TiendaEnWebForms\TiendaEnWebForms.csproj", "{C7B7FCE9-64F3-450C-A6E3-71264C3773CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaDeConceptoDeLog", "PruebaDeConceptoDeLog\PruebaDeConceptoDeLog.csproj", "{4F0ED5CF-44C8-4A26-96D9-C2D435FFC5C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{C7B7FCE9-64F3-450C-A6E3-71264C3773CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7B7FCE9-64F3-450C-A6E3-71264C3773CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7B7FCE9-64F3-450C-A6E3-71264C3773CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0ED5CF-44C8-4A26-96D9-C2D435FFC5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0ED5CF-44C8-4A26-96D9-C2D435FFC5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0ED5CF-44C8-4A26-96D9-C2D435FFC5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0ED5CF-44C8-4A26-96D9-C2D435FFC5C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +77,6 @@ Global
 		{49986368-0324-4AF9-8483-B56EC3D09940} = {0A419449-64EA-4C91-842D-30C4E0F96534}
 		{E6340C3B-610A-4AA9-8DC7-FA00874041E9} = {0A419449-64EA-4C91-842D-30C4E0F96534}
 		{C7B7FCE9-64F3-450C-A6E3-71264C3773CF} = {0A419449-64EA-4C91-842D-30C4E0F96534}
+		{4F0ED5CF-44C8-4A26-96D9-C2D435FFC5C5} = {0A419449-64EA-4C91-842D-30C4E0F96534}
 	EndGlobalSection
 EndGlobal
